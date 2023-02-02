@@ -15,9 +15,9 @@ function Header(){
     //         color: "aquamarine"
     //}; style={mystyle}
 return(
-    <div class="header"> aaa       
-        <div>
-            <p> Time : {date.toLocaleTimeString()} </p>
+    <div class="header">       
+        <div class="datetime">
+            <p class="time"> Time : {date.toLocaleTimeString()} </p>
         </div> 
     </div>
 )

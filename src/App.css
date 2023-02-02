@@ -1,3 +1,152 @@
-.header{
-  background-color: brown;
+* {
+  margin: 0;
+  box-sizing: border-box;
 }
+
+.App {
+  background-color: rgb(249, 249, 241);
+  min-height: 100vh;
+  max-height: 100vh;
+  min-width: 100vw;
+  max-width: 100vw;
+
+}
+
+.grid {
+  position: absolute;
+  /* position relative weghalen als wit vlak aan recher kant komt*/
+  bottom: 100px;
+  margin-left: 240px;
+  display: grid;
+
+  /*
+  12/14
+  6/7
+ vw 85 */
+  grid-template-columns: 514px 514px;
+  grid-template-rows: 158px 158px 158px;
+
+  /* grid-template-columns: 40vw 40vw;
+  grid-template-rows: 21vh 21vh 21vh;*/
+  column-gap: 20px;
+  row-gap: 10px;
+}
+
+@media  (max-width: 1245px) {
+  .grid {
+    position: relative;
+    top: -30rem;
+    grid-template-columns: 514px;
+    /*grid-template-rows: 158px 158px 158px 158px 158px 158px 158px; */
+    grid-template-rows:repeat(7,auto); 
+    column-gap: 10px;
+    row-gap: 10px;
+
+    min-height: 100vh;
+
+  }
+
+  /* .MyTasks {
+    grid-row-start: 1;
+    grid-row-end: 4;
+    grid-column-start: 1;
+    grid-column-end: 1;
+    background-color: brown;
+  }
+
+  .FinishedTasks {
+    background-color: white;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    grid-column-start: 1;
+  }
+
+  .Progress {
+    background-color: white;
+    grid-row-start: 5;
+    grid-row-end: 7;
+    grid-column-start: 1;
+  } */
+}
+
+/*@media screen and (max-width: 10000px){
+  .grit{
+ display: none;
+  }
+}   */
+
+.header {
+  display: flex;
+  background-image: url("paarseAchtergrond.png");
+  /*object-fit: fill;*/
+  background-size: cover;
+  z-index: 1;
+  position: absolute;
+  flex-direction: row-reverse;
+  min-width: 100vw;
+  min-height: 15vh;
+
+}
+
+.NavigationBar {
+  position: relative;
+  background-color: white;
+  height: 43em;
+  max-width: 10em;
+  z-index: 2;
+  top: 30px;
+  margin-left: 20px;
+  border-radius: 40px;
+}
+
+.MyTasks {
+  background-color: white;
+  grid-row-start: 1;
+  grid-row-end: 4;
+  grid-column-start: 1;
+  grid-column-end: 1;
+}
+
+@media screen and (max-width: 1245px){
+  .MyTasks {
+    grid-row-start: 1;
+    grid-row-end: 4;
+    grid-column-start: 1;
+    grid-column-end: 1;
+    background-color: brown;
+  }
+}
+
+.FinishedTasks {
+  background-color: white;
+  grid-row-start: 1;
+  grid-row-end: 1;
+  grid-column-start: 2;
+}
+
+ @media screen and (max-width: 1245px){
+  .FinishedTasks{
+    background-color: white; 
+    grid-row-start: 4;
+    grid-row-end: 5;
+    grid-column-start: 1;
+    
+  }
+}   
+
+.Progress {
+  grid-row-start: 2;
+  grid-row-end: 4;
+  background-color: white;
+}
+
+ @media screen and (max-width: 1245px){
+  .Progress{
+    background-color: white; 
+    grid-row-start: 5;
+    grid-row-end: 7;
+    grid-column-start: 1;
+  }
+}   
+/*overflow:hidden*/
+/*<p> props.user || "loading"</p>*/
