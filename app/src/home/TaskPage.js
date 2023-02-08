@@ -1,0 +1,24 @@
+import React from 'react'
+import FinishedTasks from './FinishedTasks';
+import MyTasks from './MyTasks';
+import Progress from './Progress'
+
+export const TaskPage = () => {
+
+    
+    
+    
+  
+
+    return(
+        <div className="Rechts">
+          <div className="grid">
+            <FinishedTasks></FinishedTasks>
+            <MyTasks></MyTasks>
+            <Progress></Progress>
+          </div>
+        </div>
+    )
+}
+
+export default TaskPage
