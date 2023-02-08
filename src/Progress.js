@@ -9,7 +9,7 @@ export const Progress = () => {
   
 
     return(
-        <div class="Progress">
+        <div className="Progress">
             <p> Progress </p>
             
         </div>

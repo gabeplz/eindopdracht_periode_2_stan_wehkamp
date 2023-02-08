@@ -9,7 +9,7 @@ export const MyTasks = () => {
   
 
     return(
-        <div class="MyTasks">
+        <div className="MyTasks">
             <p> MyTasks </p>
             
         </div>

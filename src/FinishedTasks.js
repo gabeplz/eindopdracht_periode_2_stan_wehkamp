@@ -9,7 +9,7 @@ export const FinishedTasks = () => {
   
 
     return(
-        <div class="FinishedTasks">
+        <div className="FinishedTasks">
             <p> FinishedTasks </p>
             
         </div>

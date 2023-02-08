@@ -1,4 +1,6 @@
 import React from 'react'
+import { Route, Routes } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 
 
 export const NavigationBar = () => {
@@ -9,11 +11,12 @@ export const NavigationBar = () => {
   
 
     return(
-        <div class="NavigationBar">
-            <a src=""> dashboard </a>
-            <a src=""> tasks </a>
-            <a src=""> websites </a>
-            <a src=""> something else </a>
+        <div className="NavigationBar">
+            <a src=""> a </a>
+            <a src=""> a </a>
+            <a src=""> a </a>
+            <a src=""> a </a>
+            <NavLink to="/characters">Characters</NavLink>
             
         </div>
     )
